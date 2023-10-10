@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import './HomePage.css'
+import video from '../assets/waves.mp4'
 //import { useHistory } from "react-router-dom";
 
 
@@ -35,7 +36,7 @@ const HomePage = () => {
 
   return (
     <div className="video-container">
-      <video src="./src/assets/waves.mp4" muted autoPlay loop type="video/mp4"></video>
+      <video src={video} muted autoPlay loop type="video/mp4"></video>
      <div className="content">
      <h1 className='smallText'>EXPLORE.DREAM.DISCOVER</h1>
       <h3>"The best view comes after the hardest climb."</h3>
