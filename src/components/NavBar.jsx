@@ -27,11 +27,7 @@ function Navbar() {
             <button className="btn btn-black text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Follow Us
             </button>
-            <ul className="dropdown-menu dropdown-menu-dark">
-              <li><a className="dropdown-item" href="#">Instagram</a></li>
-              <li><a className="dropdown-item" href="https://www.facebook.com/">Facebook</a></li>
-              <li><a className="dropdown-item" href="#">Twitter</a></li>
-            </ul>
+          
           </div>
           <Link to="/Login">
             <button className='btn btn-black text-white'>Login</button>
