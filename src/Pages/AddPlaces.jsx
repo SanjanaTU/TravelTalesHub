@@ -48,7 +48,7 @@ function AddPlaces(){
             </div>
             <div className="form-group">
             <label htmlfor="placeImage" class="form-label">Place Image URL:</label>
-               <input value={placeImage} className="form-control" type="file" id="placeImage" onChange={(event) =>setplaceImage(event.target.value)} required/>
+               <input value={placeImage} className="form-control" type="text" id="placeImage" onChange={(event) =>setplaceImage(event.target.value)} required/>
             </div>
             <div className="form-group">
             <label htmlFor="description">
