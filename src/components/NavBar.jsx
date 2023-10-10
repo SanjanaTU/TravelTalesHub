@@ -1,4 +1,5 @@
 import React from 'react';
+import { Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
@@ -23,12 +24,23 @@ function Navbar() {
           </section>
         </div>
         <div className='nav-right'>
-          <div className="dropdown">
-            <button className="btn btn-black text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Follow Us
-            </button>
-          
-          </div>
+        <Dropdown>
+      <Dropdown.Toggle className='btn btn-black text-white' id="dropdown-basic">
+        Follow Us
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item  className='btn btn-black text-white'  as={Link} to="https://www.facebook.com/">
+          Facebook
+        </Dropdown.Item>
+        <Dropdown.Item className='btn btn-black text-white' as={Link} to="https://www.instagram.com/">
+          Instagram
+        </Dropdown.Item>
+        <Dropdown.Item className='btn btn-black text-white' as={Link} to="https://twitter.com/">
+          Twitter
+        </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
           <Link to="/Login">
             <button className='btn btn-black text-white'>Login</button>
           </Link>

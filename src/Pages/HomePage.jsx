@@ -1,17 +1,20 @@
 import React from 'react'
+import { Link, } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import './HomePage.css'
 import video from '../assets/waves.mp4'
-//import { useHistory } from "react-router-dom";
+
 
 
 
 const HomePage = () => {
   const [selectCountry, setSelectCountry] = useState([]);
+  const [selectedCountryId, setSelectedCountryId] = useState('');
+ 
   const fetchCountry = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/countries`);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/countries`);
       if (response.ok) {
         const countries = await response.json();
         setSelectCountry(countries);
@@ -27,12 +30,11 @@ const HomePage = () => {
   }, []);
 
 
- // const history = useHistory();
-  //const handleChange = () => window.open(`/countries/${country.id}`);
-  const handleChange = event => {
-    console.log(event.target.value);
-    window.open(`/countries/${event.target.value}`);
+  const handleChange = (event) => {
+    setSelectedCountryId(event.target.value);
   };
+
+
 
   return (
     <div className="video-container">
@@ -45,8 +47,8 @@ const HomePage = () => {
     <h6>Please tag along!
     </h6>
     <section className="home">
-    <select onChange={handleChange}>
-      <option>Country you want to explore</option>
+    <select onChange={handleChange} value={selectedCountryId} className="select">
+      <option className='option' value="">Select Country</option>
       {selectCountry.map((country) => (
        
        <option key={country.id} value={country.id}>
@@ -56,6 +58,9 @@ const HomePage = () => {
       
       ))}
   </select>
+  <Link to={`/countries/${selectedCountryId}`}>
+    <button type="button" style={{background:'white',color:'black',border:'1px solid black'}} className="btn btn-outline-dark">Continue</button>
+  </Link>
   </section>
      </div>
     </div>
