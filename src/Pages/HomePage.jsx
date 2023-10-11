@@ -85,7 +85,7 @@ const HomePage = () => {
     
     <div className='featured_f'>
     
-        <h1 ><span class="line"></span>FEATURED BY<span class="line"></span></h1>
+        <h1 ><span className="line"></span>FEATURED BY<span className="line"></span></h1>
       
   <section className='image_container'>
   <img src={img1} alt="Image 1" />
@@ -98,7 +98,7 @@ const HomePage = () => {
 
   <div className='destination_dm'>
 
-  <h1><span class="line"></span>DESTINATION<span class="line"></span></h1>
+  <h1><span className="line"></span>DESTINATION<span className="line"></span></h1>
   
    
     <div className='random_container'>
@@ -128,7 +128,7 @@ const HomePage = () => {
 
   </div>
  
-  <div class="newsletter-container">
+  <div className="newsletter-container">
     <h1>Newsletter</h1>
     <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
     <input type="text" placeholder="Enter your email" />

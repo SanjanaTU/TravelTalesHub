@@ -10,11 +10,8 @@ import TouristPlaces from './Pages/TouristPlaces'
 import RandomCountries from './Pages/RandomCountries'
 import AboutUs from './Pages/AboutUs'
 import OtherCountries from './Pages/otherCountries'
-
-
-
-
-
+import RandomTourist from './Pages/RandomTourist'
+import Footer from './components/Footer'
 
 function App() {
     return (
@@ -27,7 +24,6 @@ function App() {
           <Route path='/countries/:countryId' element={<CountriesDetailPage />}/>
           <Route path='/AddPlaces/:countryId' element={<AddPlaces />} />
           <Route path='/Login' element={<Login />} />
-          <Route path="/countries/:countryId/tourist/:touristId"></Route>
           <Route
           path="/countries/:countryId/tourist/:touristId"
           element={<TouristPlaces />} />
@@ -36,10 +32,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path='/tourist/:touristId' element={<RandomTourist />} />
         </Routes>
-        <Footer />
-     
-       
-       
+        <Footer />   
       </div>
    
     )
