@@ -1,31 +1,63 @@
-import { Link } from "react-router-dom";
-import "./Login.css";
+import React, { useState } from 'react';
+import '../Pages/Login.css'
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
-function Login() {
+function FormStructor() {
+  const [isLogin, setIsLogin] = useState(true);
+
+  const toggleForm = () => {
+    setIsLogin(!isLogin);
+  };
+
   return (
-    <form className="login-form">
-      <div className="form-group">
-        <label htmlFor="exampleInputEmail1" className="form-label">
-          Email address
-        </label>
-        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div className='fade-in'>
+      <div>
+      <img src='../assets/img.jpg'/>
       </div>
-      <div className="form-group">
-        <label htmlFor="exampleInputPassword1" className="form-label">
-          Password
-        </label>
-        <input type="password" className="form-control" id="exampleInputPassword1" />
+    <div className={`form-structor ${isLogin ? '' : 'slide-up'}`}>
+      <div className="signup">
+        <h2 className="form-title" id="signup">
+          <span>or</span> {isLogin ? 'Sign up' : 'Log in'}
+        </h2>
+        <div className="form-holder">
+          <input type="text" className="input" placeholder="Name" />
+          <input type="email" className="input" placeholder="Email" />
+          <input type="password" className="input" placeholder="Password" />
+        </div>
+        <Link to="/HomePage"> {/* Link to Home Page */}
+          <button className="submit-btn">{isLogin ? 'Sign up' : 'Log in'}</button>
+        </Link>
       </div>
-      <div className="form-group form-check">
-        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-        <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
+      <div className={`login ${isLogin ? 'slide-up' : ''}`}>
+        <div className="center">
+          <h2 className="form-title" id="login">
+            <span>or</span> {isLogin ? 'Log in' : 'Sign up'}
+          </h2>
+          <div className="form-holder">
+            <input type="email" className="input" placeholder="Email" />
+            <input type="password" className="input" placeholder="Password" />
+          </div>
+          <Link to="/HomePage"> {/* Link to Home Page */}
+            <button className="submit-btn">{isLogin ? 'Log in' : 'Sign up'}</button>
+          </Link>
+        </div>
       </div>
-      <Link to={`/`}>
-        <button type="submit" className="btn btn-primary">Login</button>
-      </Link>
-    </form>
+      <button onClick={toggleForm} className="toggle-btn">
+        {isLogin ? 'Switch to Log in' : 'Switch to Sign up'}
+      </button>
+    </div>
+    </div>
   );
 }
 
-export default Login;
+export default FormStructor;
+
+
+
+
+
+
+
+
+
+

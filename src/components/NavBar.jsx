@@ -9,7 +9,7 @@ function Navbar() {
     <nav className='navbar'>
       <div className='container-fluid'>
         <div className='nav-left'>
-          <Link to="/">
+          <Link to="/HomePage">
             <button className='btn btn-black text-white'>Home</button>
           </Link>
           <Link to='/countries'>
@@ -17,7 +17,33 @@ function Navbar() {
           </Link>
           <Link to="/AboutUs">
             <button className='btn btn-black text-white'>About</button>
-          </Link>
+          </Link>  
+          <Dropdown>
+      <Dropdown.Toggle className='btn btn-black text-white' id="dropdown-basic">
+        Destinations
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Dropdown.Item  className='btn btn-black text-white'  as={Link} to="/OtherCountries">
+          Americas
+        </Dropdown.Item>
+        <Dropdown.Item className='btn btn-black text-white' as={Link} to="/OtherCountries">
+          Asia
+        </Dropdown.Item>
+        <Dropdown.Item className='btn btn-black text-white' as={Link} to="/OtherCountries">
+          Caribean
+        </Dropdown.Item>
+        <Dropdown.Item className='btn btn-black text-white' as={Link} to="/countries">
+          Europe
+        </Dropdown.Item>
+        <Dropdown.Item className='btn btn-black text-white' as={Link} to="/OtherCountries">
+          Middle East
+        </Dropdown.Item>
+        <Dropdown.Item className='btn btn-black text-white' as={Link} to="/OtherCountries">
+          Oceania
+        </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+         
         </div>
         <div className='nav-center'>
           <section className='name_project'>
@@ -31,7 +57,6 @@ function Navbar() {
       <Dropdown.Toggle className='btn btn-black text-white' id="dropdown-basic">
         Follow Us
       </Dropdown.Toggle>
-
       <Dropdown.Menu>
         <Dropdown.Item  className='btn btn-black text-white'  as={Link} to="https://www.facebook.com/">
           Facebook
@@ -44,8 +69,8 @@ function Navbar() {
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
-          <Link to="/Login">
-            <button className='btn btn-black text-white'>Login</button>
+          <Link to="/">
+            <button className='btn btn-black text-white'>Logout</button>
           </Link>
         </div>
       </div>
