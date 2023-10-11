@@ -81,9 +81,9 @@ const HomePage = () => {
     </div>
     
     <div className='featured_f'>
-      <div style={{flex: 2, height: '3px', backgroundColor: 'black'}} />
-        <h1 >Featured</h1>
-       <div style={{flex: 2, height: '3px', backgroundColor: 'black'}} />
+    
+        <h1 ><span class="line"></span>Featured<span class="line"></span></h1>
+      
   <section className='image_container'>
   <img src={img1} alt="Image 1" />
   <img src={img2} alt="Image 2" />
@@ -94,12 +94,13 @@ const HomePage = () => {
 </div>
 
   <div className='destination_dm'>
-  <div style={{flex: 1, height: '3px', backgroundColor: 'black'}} />
-    <h1>MOST VISTED DESTINATION</h1>
-    <div style={{flex: 1, height: '3px', backgroundColor: 'black'}} />
+
+  <h1><span class="line"></span>DESTINATION<span class="line"></span></h1>
+  
+   
     <div className='random_container'>
 
-      
+
       <RandomCountries /> 
       <RandomCountries />
       <RandomCountries />
@@ -111,9 +112,16 @@ const HomePage = () => {
    
 
   </div>
-  <Footer />
-  
+ 
+  <div class="newsletter-container">
+    <h1>Newsletter</h1>
+    <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
+    <input type="text" placeholder="Enter your email" />
+    <button type="submit">SUBSCRIBE</button>
+</div>
 
+  
+  <Footer />
     </>
   
 );

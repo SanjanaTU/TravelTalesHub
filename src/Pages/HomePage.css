@@ -122,7 +122,7 @@ body {
     height: 100px;
     margin: 50px; 
   }
-  
+  *
   .destination_dm{
 
     text-align: center;
@@ -145,3 +145,55 @@ body {
     gap: 50px;
   
   }
+/* Style the container for the newsletter */
+div.newsletter-container {
+  text-align: center;
+  padding: 90px;
+  background-color: #f5f5f5;
+}
+
+
+div.newsletter-container h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+
+div.newsletter-container p {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+div.newsletter-container input[type="text"] {
+  height: 50px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+div.newsletter-container button[type="submit"] {
+  height: 50px;
+  width: 150px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+div.newsletter-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.line {
+  display: inline-block;
+  width: 50px; /* Adjust the width to your preference */
+  border-top: 1px solid #000; /* Adjust the color and thickness as needed */
+  margin: 0 10px; /* Adjust the margin to control the space between the text and lines */
+}
