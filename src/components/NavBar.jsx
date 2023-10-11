@@ -7,7 +7,7 @@ import icon from '../assets/travel_826070.png'
 function Navbar() {
   return (
     <nav className='navbar'>
-      <div className='container-fluid'>
+      <div className='container-fluid' style={{width:'1700px'}}>
         <div className='nav-left'>
           <Link to="/HomePage">
             <button className='btn btn-black text-white'>Home</button>

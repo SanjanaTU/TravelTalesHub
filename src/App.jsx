@@ -11,7 +11,7 @@ import RandomCountries from './Pages/RandomCountries'
 import AboutUs from './Pages/AboutUs'
 import OtherCountries from './Pages/otherCountries'
 import RandomTourist from './Pages/RandomTourist'
-import Footer from './components/Footer'
+
 
 function App() {
     return (
@@ -32,7 +32,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path='/tourist/:touristId' element={<RandomTourist />} />
         </Routes>
-        <Footer />   
+         
       </div>
    
     )

@@ -9,6 +9,7 @@ import img1 from '../assets/BBCTravel.jpg';
 import img2 from '../assets/R.png';
 import img3 from '../assets/usa.png';
 import img4 from '../assets/travel.png'
+import Footer from '../components/Footer'
 
 import RandomTourist from './RandomTourist';
 
@@ -114,7 +115,7 @@ const HomePage = () => {
     </div>
 
     <div className='random_tourist'>
-    <h1><span class="line"></span>TOURIST PLACES<span class="line"></span></h1>
+    <h1><span className="line"></span>TOURIST PLACES<span className="line"></span></h1>
     <div className='random_t'>
     <RandomTourist />
       <RandomTourist />
@@ -135,7 +136,7 @@ const HomePage = () => {
     <button type="submit">SUBSCRIBE</button>
 </div>
 
-
+ <Footer/>
     </>
   
 );

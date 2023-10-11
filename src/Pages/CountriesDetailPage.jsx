@@ -4,6 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { AiOutlineDelete } from "react-icons/ai";
 import { Button } from "react-bootstrap";
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 const CountriesDetailPage = () => {
   const { countryId } = useParams();
@@ -116,6 +117,7 @@ const CountriesDetailPage = () => {
         <p>Loading...</p>
       )}
     </Container>
+    <Footer/>
     </>
   );
 };
