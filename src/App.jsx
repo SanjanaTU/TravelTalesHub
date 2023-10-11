@@ -8,6 +8,8 @@ import Navbar from './components/NavBar'
 import AddPlaces from './Pages/AddPlaces'
 import Login from './Pages/Login'
 import TouristPlaces from './Pages/TouristPlaces'
+import RandomCountries from './Pages/RandomCountries'
+import AboutUs from './Pages/AboutUs'
 
 
 
@@ -24,11 +26,14 @@ function App() {
           <Route path='/countries/:countryId' element={<CountriesDetailPage />}/>
           <Route path='/AddPlaces/:countryId' element={<AddPlaces />} />
           <Route path='/Login' element={<Login />} />
-          <Route
-          path="/countries/:countryId/tourist/:touristId"
+          <Route path="/countries/:countryId/tourist/:touristId"
           element={<TouristPlaces />} />
+          <Route path='/countries/:countryId' element={<RandomCountries />} />
         <Route path="*" element={<h1>You Landed On Wrong Page</h1>} />
+        <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
+        
+       
        
       </div>
    

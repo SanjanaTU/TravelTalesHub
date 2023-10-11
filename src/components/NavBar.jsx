@@ -15,7 +15,7 @@ function Navbar() {
           <Link to='/countries'>
             <button className='btn btn-black text-white'>Discover</button>
           </Link>
-          <Link to="/About">
+          <Link to="/AboutUs">
             <button className='btn btn-black text-white'>About</button>
           </Link>
         </div>
