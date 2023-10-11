@@ -4,20 +4,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 5vh;
   }
   
 
   h2 {
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
   
   .countryimage {
-    max-width: 300px;
+    margin-top: 100px;
+    max-width: 800px;
     height: 300px;
-    border-radius: 0.25rem;
+    border-radius: 2.25rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out; 
   }
@@ -29,9 +31,10 @@
   
  
   .description {
+   
     font-size: 1.1rem;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: left; 
     transition: color 0.2s; 
   }
@@ -66,69 +69,7 @@
     color: #0056b3; 
   }
   
- /* TouristPlaces */
-
-
-.tourist-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f8f8f8;
-}
-
-
-.tourist-content {
-  display: flex;
-  max-width: 800px;
-  background-color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.tourist-content:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.image-container {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-
-
-.tourist-image {
-  width: 400px; 
-  height: 500px; 
-  display: block;
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-container:hover .tourist-image {
-  transform: scale(1.05);
-}
-
-
-.description-container {
-  flex: 1;
-  padding: 20px;
-}
-
-
-.tourist-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-
-
-
-.custom-button {
+ .custom-button {
   background-color: transparent;
   color: white;
   border: none;
@@ -141,7 +82,62 @@
 
 
 
+/* TouristPlaces */
+.tourist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  background-color: #f8f8f8;
+}
 
+.tourist-content {
+  display: flex;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 10px; 
+  margin-top: 20px; }
 
+.tourist-content:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
 
+.image-container {
+  flex: 10;
+  position: relative;
+  overflow: hidden;
+}
 
+.tourist-image {
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 400px; 
+  height: 600px; 
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover .tourist-image {
+  transform: scale(1.08);
+}
+
+.description-container {
+  flex: 1;
+  padding: 10px; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.description-container:hover {
+  background-color: white; 
+  color: blue;}
+
+.tourist-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}

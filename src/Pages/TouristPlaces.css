@@ -4,9 +4,9 @@
   background-color: transparent; 
   color: black; 
   border: none; 
-  padding: 0; 
+  padding-top: 70px;
   margin-top: 300px;
-  margin-left: 350px;
+  margin-left: 300px;
   cursor: pointer; 
   display: inline-block; 
   vertical-align: center; 
