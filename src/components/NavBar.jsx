@@ -2,6 +2,7 @@ import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
+import icon from '../assets/travel_826070.png'
 
 function Navbar() {
   return (
@@ -20,7 +21,9 @@ function Navbar() {
         </div>
         <div className='nav-center'>
           <section className='name_project'>
+          <img  className='name_icon' src={icon} alt={icon}/>
             <h1>TravelTalesHub</h1>
+           
           </section>
         </div>
         <div className='nav-right'>
