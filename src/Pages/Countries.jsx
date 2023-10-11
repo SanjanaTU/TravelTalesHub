@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap"; 
+import NavBar from '../components/NavBar'
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -23,6 +24,8 @@ const Countries = () => {
   }, []);
 
   return (
+    <>
+    <NavBar/>
     <Container>
       <h1 className="text-center mt-4 mb-4">Explore The Places</h1>
       <Row>
@@ -46,6 +49,7 @@ const Countries = () => {
         ))}
       </Row>
     </Container>
+    </>
   );
 };
 

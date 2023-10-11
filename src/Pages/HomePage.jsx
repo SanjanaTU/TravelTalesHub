@@ -9,9 +9,10 @@ import img1 from '../assets/BBCTravel.jpg';
 import img2 from '../assets/R.png';
 import img3 from '../assets/usa.png';
 import img4 from '../assets/travel.png'
-import Footer from '../components/Footer';
+
 import RandomTourist from './RandomTourist';
 
+import NavBar from '../components/NavBar'
 
 
 
@@ -50,6 +51,7 @@ const HomePage = () => {
 
   return (
     <>
+    <NavBar/>
     <div className="video-container">
       <video src={video} muted autoPlay loop type="video/mp4"></video>
      <div className="content">

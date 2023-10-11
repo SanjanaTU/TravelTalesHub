@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import './AddPlaces.css'
+import NavBar from '../components/NavBar'
 
 function AddPlaces(){
     const navigate =  useNavigate()
@@ -37,6 +38,8 @@ function AddPlaces(){
              
     }
     return (
+        <>
+        <NavBar/>
         <div className="place-form-container">
         <form className="place-form" 
         onSubmit={onSubmit}>
@@ -68,6 +71,7 @@ function AddPlaces(){
             </div>
         )}
         </div>
+        </>
     )
 
 }

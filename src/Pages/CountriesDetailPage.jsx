@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { AiOutlineDelete } from "react-icons/ai";
 import { Button } from "react-bootstrap";
+import NavBar from '../components/NavBar'
 
 const CountriesDetailPage = () => {
   const { countryId } = useParams();
@@ -61,6 +62,8 @@ const CountriesDetailPage = () => {
   };
 
   return (
+    <>
+    <NavBar/>
     <Container className="mt-4">
       {country ? (
         <>
@@ -113,6 +116,7 @@ const CountriesDetailPage = () => {
         <p>Loading...</p>
       )}
     </Container>
+    </>
   );
 };
 

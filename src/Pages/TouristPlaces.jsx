@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './TouristPlaces.css'
+import NavBar from '../components/NavBar'
 
 const TouristPlaces = () => {
   const { touristId } = useParams();
@@ -63,6 +64,8 @@ const TouristPlaces = () => {
   };
 
   return (
+    <>
+    <NavBar/>
     <div className={`tourist-container ${isLoaded ? "fade-in" : ""}`}>
       {tourist ? (
         <div className="tourist-content">
@@ -112,6 +115,7 @@ const TouristPlaces = () => {
         <p>Loading...</p>
       )}
     </div>
+    </>
   );
 };
 
