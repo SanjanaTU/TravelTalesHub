@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './RandomCountries.css'
+
 import { Link, useParams } from "react-router-dom";
 
 const RandomCountries = () => {
@@ -28,7 +28,7 @@ const RandomCountries = () => {
     fetchRandomCountry();
     const intervalId = setInterval(() => {
       fetchRandomCountry();
-    }, 5000);
+    }, 20000);
 
     return () => {
       clearInterval(intervalId);

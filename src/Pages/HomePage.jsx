@@ -10,6 +10,7 @@ import img2 from '../assets/R.png';
 import img3 from '../assets/usa.png';
 import img4 from '../assets/travel.png'
 import Footer from '../components/Footer';
+import RandomTourist from './RandomTourist';
 
 
 
@@ -82,7 +83,7 @@ const HomePage = () => {
     
     <div className='featured_f'>
     
-        <h1 ><span class="line"></span>Featured<span class="line"></span></h1>
+        <h1 ><span class="line"></span>FEATURED BY<span class="line"></span></h1>
       
   <section className='image_container'>
   <img src={img1} alt="Image 1" />
@@ -109,6 +110,18 @@ const HomePage = () => {
       
     
     </div>
+
+    <div className='random_tourist'>
+    <h1><span class="line"></span>TOURIST PLACES<span class="line"></span></h1>
+    <div className='random_t'>
+    <RandomTourist />
+      <RandomTourist />
+      <RandomTourist />
+      <RandomTourist />
+
+    </div>
+    
+    </div>
    
 
   </div>
@@ -120,8 +133,7 @@ const HomePage = () => {
     <button type="submit">SUBSCRIBE</button>
 </div>
 
-  
-  <Footer />
+
     </>
   
 );

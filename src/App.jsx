@@ -10,6 +10,8 @@ import Login from './Pages/Login'
 import TouristPlaces from './Pages/TouristPlaces'
 import RandomCountries from './Pages/RandomCountries'
 import AboutUs from './Pages/AboutUs'
+import Footer from './components/Footer'
+import RandomTourist from './Pages/RandomTourist'
 
 
 
@@ -31,8 +33,10 @@ function App() {
           <Route path='/countries/:countryId' element={<RandomCountries />} />
         <Route path="*" element={<h1>You Landed On Wrong Page</h1>} />
         <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path='/tourist/:touristId' element={<RandomTourist />} />
         </Routes>
-        
+        <Footer />
+     
        
        
       </div>
