@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './TouristPlaces.css'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 const TouristPlaces = () => {
   const { touristId } = useParams();
@@ -115,6 +116,7 @@ const TouristPlaces = () => {
         <p>Loading...</p>
       )}
     </div>
+    <Footer/>
     </>
   );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap"; 
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -49,6 +50,7 @@ const Countries = () => {
         ))}
       </Row>
     </Container>
+    <Footer/>
     </>
   );
 };
