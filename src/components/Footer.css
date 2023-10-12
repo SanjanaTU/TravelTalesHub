@@ -1,56 +1,54 @@
-
-
-.footer-main{
+.footer-main {
   background-color: black;
-   position: absolute;
-   width: 80%;
-   padding: 5px 0;
-    
+  position: relative;
+  width: 80%;
+  padding: 5px 0;
+
 }
+
 .footer-logo {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .footer-logo img {
-    width: 40px;
-    height: auto;
-  }
-  
-  
-  .footer-navigation ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .footer-navigation ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  
-  .footer-contact {
-    text-align: center;
-  }
-  
- 
-  .footer-social ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .footer-social ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
- 
-  a:hover {
-    color: #007bff;
-  }
-  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-logo img {
+  width: 40px;
+  height: auto;
+}
+
+
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-navigation ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+
+.footer-contact {
+  text-align: center;
+}
+
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-social ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+
+a:hover {
+  color: #007bff;
+}

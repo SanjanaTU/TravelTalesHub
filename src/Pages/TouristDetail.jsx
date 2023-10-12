@@ -1,38 +1,42 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import '../Pages/TouristDetail.css'
+import Footer from "../components/Footer";
 
 const TouristDetail = () => {
-    
-    const [tourist,setTourist] = useState([])
+  const{touristId} = useParams()
+  const [tourist, setTourist] = useState([]);
 
-    const fetchAllTourist = async () =>{
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/tourist`)
-       if(response.ok){
-        const allTourist = await response.json()
-        setTourist(allTourist)
-        console.log(allTourist)
-       }
-    
+  const fetchAllTourist = async () => {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/tourist/${touristId}`);
+    if (response.ok) {
+      const allTourist = await response.json();
+      setTourist(allTourist);
+      console.log(allTourist);
     }
+  };
 
-    useEffect(()=>{
-        fetchAllTourist()
-    },[])
+  useEffect(() => {
+    fetchAllTourist();
+  }, []);
   return (
     <div>
-  <Link to={`/tourist/${tourist?.id}`}>
-      <div className="Tourist">
-        {tourist && (
-          <>
-            <img src={tourist.placeImage} style={{ width: '210px', height: '150px' }}  alt={tourist.placeName} />
-            <p>{tourist.placeName}</p>
+      <Link to={`/tourist/${tourist?.id}`}></Link>
+      {tourist && (
+        <div className="Tourist">
+          <h1>{tourist.placeName}</h1>
+          <img
+            src={tourist.placeImage}
+            alt={tourist.placeName}
+            style={{ width: "300px", height: "350px" }}
+          />
             <p>{tourist.description}</p>
-          </>
-        )}
-      </div>
-    </Link>
+        </div>
+      )}
+       <Footer />
     </div>
-  )
-}
+   
+  );
+};
 
-export default TouristDetail
+export default TouristDetail;

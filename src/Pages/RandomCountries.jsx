@@ -10,8 +10,9 @@ const RandomCountries = () => {
     const response = await fetch(`${import.meta.env.VITE_API_URL}/countries`);
     const allCountries = await response.json();
 
-    
-    const availableCountries = allCountries.filter(country => !previousCountries.includes(country.id));
+    const availableCountries = allCountries.filter(
+      (country) => !previousCountries.includes(country.id)
+    );
 
     if (availableCountries.length > 0) {
       const randomIndex = Math.floor(Math.random() * availableCountries.length);
@@ -19,7 +20,6 @@ const RandomCountries = () => {
       setCountries(randomCountry);
       setPreviousCountries([...previousCountries, randomCountry.id]);
     } else {
-      
       setPreviousCountries([]);
     }
   };
@@ -40,7 +40,11 @@ const RandomCountries = () => {
       <div className="RandomCountries">
         {countries && (
           <>
-            <img src={countries.image} style={{ width: '210px', height: '150px' }}  alt={countries.name} />
+            <img
+              src={countries.image}
+              style={{ width: "210px", height: "150px" , borderRadius: '25px' }}
+              alt={countries.name}
+            />
             <p>{countries.name}</p>
           </>
         )}

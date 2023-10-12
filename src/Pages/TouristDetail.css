@@ -1,0 +1,49 @@
+
+/* Styles for the main container */
+.Tourist {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .Tourist h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  
+  .Tourist img {
+    max-width: 100%;
+  
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ 
+  .Tourist p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .Tourist a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .Tourist a:hover {
+    text-decoration: underline;
+  }
+  

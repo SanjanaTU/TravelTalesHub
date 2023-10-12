@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
- /* position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;*/
@@ -51,12 +51,12 @@
 
 .name_project {
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .name_project h1 {
-  font-size: 24px; 
-  color: white; 
+  font-size: 24px;
+  color: white;
 }
 
 .name_project {
@@ -66,4 +66,5 @@
 
 .name_icon {
   width: 30px;
-  margin-right: 10px; }
+  margin-right: 10px;
+}

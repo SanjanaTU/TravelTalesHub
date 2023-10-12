@@ -86,10 +86,8 @@ const HomePage = () => {
 
       <div className="featured_f">
         <h1>
-        <span className="line"></span>FEATURED BY
+          <span className="line"></span>FEATURED BY
           <span className="line"></span>
-      
-          
         </h1>
 
         <section className="image_container">

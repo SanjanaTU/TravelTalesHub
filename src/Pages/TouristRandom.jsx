@@ -35,19 +35,20 @@ const TouristRandom = () => {
     };
   }, []);
 
-  return (
-    
-    tourist ? (
-      <Link to={`/tourist/${tourist.id}`}>
-        <div className="Randomtourist">
-          <>
-            <img src={tourist.placeImage} style={{ width: "210px", height: "150px" }} alt={tourist.placeName} />
-            <p>{tourist.placeName}</p>
-          </>
-        </div>
-      </Link>
-    ) : null
-  );
+  return tourist ? (
+    <Link to={`/tourist/${tourist.id}`}>
+      <div className="Randomtourist">
+        <>
+          <img
+            src={tourist.placeImage}
+                            style={{ width: "210px", height: "150px" , borderRadius:'25px'}}
+            alt={tourist.placeName}
+          />
+          <p>{tourist.placeName}</p>
+        </>
+      </div>
+    </Link>
+  ) : null;
 };
 
 export default TouristRandom;

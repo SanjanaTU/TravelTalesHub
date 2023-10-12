@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const CountriesDetailPage = () => {
   const { countryId } = useParams();
@@ -43,17 +43,17 @@ const CountriesDetailPage = () => {
 
   const handleDelete = async (id) => {
     try {
-     
       const response = await fetch(
         `${import.meta.env.VITE_API_URL}/tourist/${id}`,
         {
           method: "DELETE",
           headers: {
-            "Content-Type": "application/json", }
+            "Content-Type": "application/json",
+          },
         }
       );
 
-        setPlace((prevPlace) =>
+      setPlace((prevPlace) =>
         prevPlace.filter((touristplace) => touristplace.id !== id)
       );
     } catch (error) {
@@ -63,60 +63,60 @@ const CountriesDetailPage = () => {
 
   return (
     <>
-    <NavBar/>
-    <Container className="mt-4">
-      {country ? (
-        <>
-          <Row>
-            <Col xs={12} md={6}>
-              <Image
-                src={country.image1}
-                alt={country.name}
-                fluid
-                className="countryimage"
-              />
-            </Col>
-            <Col xs={12} md={6}>
-              <h2>{country.name}</h2>
-              <p className="mb-3">
-                <strong>Capital:</strong> {country.capital}
-              </p>
-              <p className="description">{country.description}</p>
-            </Col>
-          </Row>
-          <hr className="my-4" />
-          <h3>Tourist Places</h3>
-          <ul className="tourist-places-list">
-            {place ? (
-              place.map((touristplace) => (
-                <li key={touristplace.id}>
-                  <Link
-                    to={`/countries/${countryId}/tourist/${touristplace.id}`}
-                    className="tourist-link"
-                  >
-                    {touristplace.placeName}
-                  </Link>
-                  <Button
-                    className="custom-button"
-                    onClick={() => handleDelete(touristplace.id)}>
-                    <span className="trash-icon">🗑️</span>
-                  </Button>
-                </li>
-                
-              ))
-            ) : (
-              <p>No tourist places available.</p>
-            )}
-          </ul>
-          <Link to={`/AddPlaces/${countryId}`} className="add-places-button">
-  Add Places
-</Link>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </Container>
-    <Footer/>
+      <NavBar />
+      <Container className="mt-4">
+        {country ? (
+          <>
+            <Row>
+              <Col xs={12} md={6}>
+                <Image
+                  src={country.image1}
+                  alt={country.name}
+                  fluid
+                  className="countryimage"
+                />
+              </Col>
+              <Col xs={12} md={6}>
+                <h2>{country.name}</h2>
+                <p className="mb-3">
+                  <strong>Capital:</strong> {country.capital}
+                </p>
+                <p className="description">{country.description}</p>
+              </Col>
+            </Row>
+            <hr className="my-4" />
+            <h3>Tourist Places</h3>
+            <ul className="tourist-places-list">
+              {place ? (
+                place.map((touristplace) => (
+                  <li key={touristplace.id}>
+                    <Link
+                      to={`/countries/${countryId}/tourist/${touristplace.id}`}
+                      className="tourist-link"
+                    >
+                      {touristplace.placeName}
+                    </Link>
+                    <Button
+                      className="custom-button"
+                      onClick={() => handleDelete(touristplace.id)}
+                    >
+                      <span className="trash-icon">🗑️</span>
+                    </Button>
+                  </li>
+                ))
+              ) : (
+                <p>No tourist places available.</p>
+              )}
+            </ul>
+            <Link to={`/AddPlaces/${countryId}`} className="add-places-button">
+              Add Places
+            </Link>
+          </>
+        ) : (
+          <p>Loading...</p>
+        )}
+      </Container>
+      <Footer />
     </>
   );
 };
