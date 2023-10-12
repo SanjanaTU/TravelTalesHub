@@ -1,47 +1,56 @@
 import React from 'react';
 import '../Pages/AboutUs.css';
-import image from '../assets/me(1).jpeg';
-import NavBar from '../components/NavBar'
-
+import image1 from '../assets/me(1).jpeg';
+import NavBar from '../components/NavBar';
+import img2 from '../assets/img2.jpeg';
+import Footer from '../components/Footer';
 
 const AboutUs = () => {
   return (
+
+  
    
-    <div>
-    <NavBar/>
-    
-    <div>
-      <img className='about-me-image'/>
-      <h1 className='centre-heading'>About Us</h1>
-      </div>
-      <div className='about-me-card'>
-      
-        <h2>ABOUT ME</h2>
-        <img src={image} alt="Image 1" style={{top:'10px',left:'10px',height:'120px',width:'100px'}}/>
-        <h3>Sushma</h3>
-        <p className='about-me-text'>
-  Thanks for looking! I'm Sushma, and this is our travel blog project for our web development course. I was born and raised in India. I moved to the Netherlands six months ago, and I have a son. Moving to the Netherlands was really challenging for me because I hadn't been away from my parents and siblings until that point.
-</p>
-<p>
-  I have an engineering background (B.Tech) but didn't work in the coding field that much. I had to take a break from work to take care of my son. During that time, I felt depressed being at home, so I decided to study Fashion Designing and opened a boutique. Later, my husband got a job offer here, so we moved to the Netherlands. It's been a roller coaster ride, but I'm still running the boutique from here.
-</p>
-<p>
-  I thought about working in the tech field, so I joined Ironhack. If you had told me six weeks ago that I would be creating a webpage, I wouldn't have believed it. But now, I've done it, and I'm proud of myself.
-</p>
-<p>
-  If you want to travel somewhere, this project will help you discover tourist places. Currently, our website has only a few places, but we will be updating it soon. We are dedicated to sharing our travel experiences, tips, and recommendations to make your journeys memorable.
-</p>
+    <div className="about-us-container">
+         <NavBar />
+                 <div className="about-me-container">
+        <div className="about-me-card">
+                    <div className="image-container">
+            <img src={image1} alt="Image 1" className="profile-image" />
+          </div>
+          <h3>Sushma</h3>
+          <div className="about-me-text" >
+          <p >
+            Thanks for visiting! I'm Sushma, and this is our travel blog project created during our web development course. I was born and raised in India, but I made the big move to the Netherlands just six months ago with my son and husband. This transition was particularly challenging for me as I had never been away from my parents and siblings before.
+          </p>
+          <p>
+            My educational background includes a Bachelor of Technology (B.Tech), though I didn't work extensively in the coding field. I took a career break to take care of my son, and during that time, I decided to study Fashion Designing and opened a boutique. Later, my husband received a job offer here, so we moved to the Netherlands. It's been a roller coaster ride, but I'm still successfully running the boutique from here.
+          </p>
+          <p>
+            Recently, I contemplated a return to the tech field, and I joined Ironhack. If you had told me just six weeks ago that I would be creating a webpage, I wouldn't have believed it. But now, I've achieved it, and I'm immensely proud of my progress.
+          </p>
+          <p>
+            If you're looking for travel inspiration, our project is here to help you discover amazing tourist destinations. Currently, our website features only a few places, but we'll be adding more soon. We're dedicated to sharing our travel experiences, tips, and recommendations to make your journeys truly memorable.
+          </p>
+          </div>
+        </div>
 
-
+        <div className="partner-card">
+          
+          <div className="image-container">
+            <img src={img2} alt="Img2" className="profile-image" />
+          </div>
+          <h3>Sanjana TU</h3>
+          <div className="about-me-text">
+          <p >
+            Greetings! I am Sanjana, a dedicated professional with a Master's degree in Computer Applications. My family and I embarked on an exciting journey to the Netherlands in November 2022. I extend my heartfelt gratitude for taking the time to explore our travel blog project, which is a product of our web development course at Ironhack.
+          </p>
+          <p>
+            This endeavor is a testament to our passion for travel inspiration and our desire to share valuable insights about the incredible places we encounter along the way. We are committed to providing informative and engaging content to help fellow travelers discover the wonders of the world. Thank you for joining us on this enriching voyage of exploration and discovery.
+          </p>
+          </div>
+        </div>
       </div>
-      <div className='about-me-card'>
-        <h2>MY Partner</h2>
-        <h3>Sanjana</h3>
-      <p className='about-me-text'>
-        We believe in delivering high-quality content and services while
-        maintaining transparency and user satisfaction.
-      </p>
-    </div>
+      <Footer />
     </div>
   );
 };

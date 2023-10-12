@@ -6,8 +6,6 @@ body {
 }
 
 
-
-
 *:focus {
   outline: none;
 }
@@ -17,7 +15,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   z-index: -1;
 }
@@ -26,7 +24,7 @@ body {
 .content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px;
@@ -36,6 +34,7 @@ body {
 .explore-text {
   color: white;
   font-size: 36px;
+
   margin-bottom: 20px;
 }
 
@@ -97,7 +96,9 @@ button.btn-outline-dark {
 /* Style the container for the newsletter */
 div.newsletter-container {
   text-align: center;
-  padding: 120px;
+  padding-bottom: -15px;
+  transform: translate(-1%, -70%);
+
   background-color: #f5f5f5;
 }
 
@@ -117,7 +118,7 @@ div.newsletter-container p {
 div.newsletter-container input[type="text"] {
   height: 50px;
   width: 400px;
-  padding: 10px;
+  padding: 15px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -207,4 +208,34 @@ div.newsletter-container input[type="text"] {
   height: 2px;
   background: #191970;
   margin-right: 10px;
+}
+
+
+/*......partner....*/
+.team-container {
+  text-align: center;
+  padding: 200px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.team-member {
+  margin: 20px;
+}
+
+.team-image {
+  width: 200px; 
+  height: auto;
+  border-radius: 90px;
+  
+}
+
+.team-description {
+  text-align: left;
+  margin-top: 20px;
 }

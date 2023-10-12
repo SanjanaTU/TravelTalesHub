@@ -12,6 +12,8 @@ import img4 from "../assets/travel.png";
 import Footer from "../components/Footer";
 import TouristRandom from "./TouristRandom";
 import NavBar from "../components/NavBar";
+import img5 from "../assets/img1.jpeg"
+import img6 from '../assets/me(3).jpeg'
 
 const HomePage = () => {
   const [selectCountry, setSelectCountry] = useState([]);
@@ -124,6 +126,27 @@ const HomePage = () => {
         </div>
       </div>
 
+      <div className="team-container">
+  <h1>
+    <span className="line"></span>We The Team<span className="line"></span>
+  </h1>
+  <div className="team-members">
+    <div className="team-member">
+      <img src={img5} alt='Sanjana' className="team-image" />
+    </div>
+    <div className="team-member">
+      <img src={img6} alt='Sushma' className="team-image" />
+    </div>
+  </div>
+  <div className="team-description">
+    <p>We, two remarkable women with diverse backgrounds and a shared passion for travel, have come together to create an inspiring travel blog project. Sushma's journey from India to the Netherlands, along with her family, speaks of her courage and adaptability in the face of change. Her background in technology and fashion designing has added unique dimensions to her life, and now, she's delving into web development at Ironhack. Sanjana, on the other hand, brings a strong educational foundation in Computer Applications and a deep enthusiasm for exploration to the table. Together,we dedicated to sharing our travel experiences, insights, and recommendations, offering a valuable resource for fellow adventurers. Our journey is a testament to the power of passion and the pursuit of new horizons. Join us on our enriching voyage of discovery and inspiration.</p>
+  </div>
+</div>
+
+     
+
+    
+
       <div className="newsletter-container">
         <h1>Newsletter</h1>
         <p>
@@ -133,6 +156,8 @@ const HomePage = () => {
         <input type="text" placeholder="Enter your email" />
         <button type="submit">SUBSCRIBE</button>
       </div>
+
+      
       <Footer />
     </>
   );

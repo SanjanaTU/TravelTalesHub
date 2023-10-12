@@ -2,8 +2,7 @@
   background-color: black;
   position: relative;
   width: 80%;
-  padding: 5px 0;
-
+  padding-bottom: 1px;
 }
 
 .footer-logo {
@@ -22,13 +21,13 @@
 
 .footer-navigation ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   text-align: center;
 }
 
 .footer-navigation ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 
@@ -45,7 +44,7 @@
 
 .footer-social ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 12px;
 }
 
 

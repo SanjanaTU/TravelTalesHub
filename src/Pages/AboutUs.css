@@ -1,28 +1,75 @@
-.center-heading {
-    text-align: center;
-  }
 
-  /* Create a card-like layout for the "About Me" section */
-  .about-me-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-    margin: 20px;
-    text-align: center;
-  }
 
-  /* Position the image on top-left and bottom-right of the "About Me" div */
-  .about-me-image {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
-  }
+/* Full viewport height */
+.about-us-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
 
-  /* Center the text within the "About Me" div */
-  .about-me-text {
-    text-align: center;
-  }
+.centre-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; 
+}
+
+/* About Me and Partner sections */
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; 
+  padding: 20px;
+}
+
+.about-me-card, .partner-card {
+  flex-basis: 48%; 
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.about-me-card:hover, .partner-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Profile images on the right side */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile-image {
+  width: 150px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 20px; 
+}
+
+/* Headings and text */
+h2, h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left; 
+}
+
+.about-me-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: left; 
+}
