@@ -84,7 +84,7 @@ function FormStructor() {
         setUsername("");
         setPassword("");
         setEmail("");
-
+        login();
         alert("user successfully created please login");
         navigate(`/`);
       }
