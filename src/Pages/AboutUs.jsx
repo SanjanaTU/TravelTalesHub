@@ -23,13 +23,10 @@ const AboutUs = () => {
             Thanks for visiting! I'm Sushma, and this is our travel blog project created during our web development course. I was born and raised in India, but I made the big move to the Netherlands just six months ago with my son and husband. This transition was particularly challenging for me as I had never been away from my parents and siblings before.
           </p>
           <p>
-            My educational background includes a Bachelor of Technology (B.Tech), though I didn't work extensively in the coding field. I took a career break to take care of my son, and during that time, I decided to study Fashion Designing and opened a boutique. Later, my husband received a job offer here, so we moved to the Netherlands. It's been a roller coaster ride, but I'm still successfully running the boutique from here.
+            My educational background includes a Bachelor of Technology (B.Tech), though I didn't work extensively in the coding field. 
           </p>
           <p>
-            Recently, I contemplated a return to the tech field, and I joined Ironhack. If you had told me just six weeks ago that I would be creating a webpage, I wouldn't have believed it. But now, I've achieved it, and I'm immensely proud of my progress.
-          </p>
-          <p>
-            If you're looking for travel inspiration, our project is here to help you discover amazing tourist destinations. Currently, our website features only a few places, but we'll be adding more soon. We're dedicated to sharing our travel experiences, tips, and recommendations to make your journeys truly memorable.
+            If you're looking for travel inspiration, our project is here to help you discover amazing tourist destinations.We're dedicated to sharing our travel experiences, tips, and recommendations to make your journeys truly memorable.
           </p>
           </div>
         </div>
