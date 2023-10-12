@@ -9,7 +9,7 @@ import Login from "./Pages/Login";
 import TouristPlaces from "./Pages/TouristPlaces";
 import RandomCountries from "./Pages/RandomCountries";
 import AboutUs from "./Pages/AboutUs";
-import OtherCountries from "./Pages/otherCountries";
+import OtherCountries from "./Pages/OtherCountries";
 import TouristRandom from "./Pages/TouristRandom";
 import TouristDetail from "./Pages/TouristDetail";
 
