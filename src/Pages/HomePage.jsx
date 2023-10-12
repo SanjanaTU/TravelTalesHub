@@ -114,7 +114,7 @@ const HomePage = () => {
 
       <div className="random_tourist">
         <h1>
-          <span class="line"></span>TOURIST PLACES<span class="line"></span>
+          <span className="line"></span>TOURIST PLACES<span className="line"></span>
         </h1>
         <div className="random_t">
           <TouristRandom />
