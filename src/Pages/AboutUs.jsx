@@ -1,7 +1,9 @@
 import React from 'react';
 
+
 const AboutUs = () => {
   return (
+    <>
     <div>
       <h1>About Us</h1>
       <p>
@@ -14,6 +16,8 @@ const AboutUs = () => {
         maintaining transparency and user satisfaction.
       </p>
     </div>
+    
+    </>
   );
 };
 

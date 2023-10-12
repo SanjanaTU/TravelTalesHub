@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { AiOutlineDelete } from "react-icons/ai";
 import { Button } from "react-bootstrap";
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
@@ -109,9 +108,9 @@ const CountriesDetailPage = () => {
               <p>No tourist places available.</p>
             )}
           </ul>
-          <Link to={`/AddPlaces/${countryId}`}>
-      <button className='btn btn-dark'>Add Places</button>
-      </Link>
+          <Link to={`/AddPlaces/${countryId}`} className="add-places-button">
+  Add Places
+</Link>
         </>
       ) : (
         <p>Loading...</p>

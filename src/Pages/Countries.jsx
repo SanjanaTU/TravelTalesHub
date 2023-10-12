@@ -8,7 +8,7 @@ const Countries = () => {
   const [countries, setCountries] = useState([]);
 
   const fetchAllCountries = async () => {
-    console.log(`${import.meta.env.VITE_API_URL}/countries`)
+    
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/countries`);
       if (response.ok) {

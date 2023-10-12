@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import './AddPlaces.css'
 import NavBar from '../components/NavBar'
+import Footer from "../components/Footer";
 
 function AddPlaces(){
     const navigate =  useNavigate()
@@ -61,7 +62,7 @@ function AddPlaces(){
            
             </div>
             
-                <button type="submit" style={{background:'dark'}} className='btn btn-black text-white'>Add Place</button>
+                <button type="submit" style={{background:'dark'}} className='btn btn-black text-black'>Add Place</button>
             
             
         </form>
@@ -71,6 +72,7 @@ function AddPlaces(){
             </div>
         )}
         </div>
+        <Footer />
         </>
     )
 

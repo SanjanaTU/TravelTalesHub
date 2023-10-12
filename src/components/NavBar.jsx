@@ -12,10 +12,7 @@ function Navbar() {
           <Link to="/HomePage">
             <button className='btn btn-black text-white'>Home</button>
           </Link>
-          <Link to='/countries'>
-            <button className='btn btn-black text-white'>Discover</button>
-          </Link>
-          <Link to="/AboutUs">
+                    <Link to="/AboutUs">
             <button className='btn btn-black text-white'>About</button>
           </Link>  
           <Dropdown>

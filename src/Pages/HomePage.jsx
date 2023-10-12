@@ -10,9 +10,7 @@ import img2 from "../assets/R.png";
 import img3 from "../assets/usa.png";
 import img4 from "../assets/travel.png";
 import Footer from "../components/Footer";
-
-import RandomTourist from "./RandomTourist";
-
+import TouristRandom from "./TouristRandom";
 import NavBar from "../components/NavBar";
 
 const HomePage = () => {
@@ -88,8 +86,10 @@ const HomePage = () => {
 
       <div className="featured_f">
         <h1>
-          <span className="line"></span>FEATURED BY
+        <span className="line"></span>FEATURED BY
           <span className="line"></span>
+      
+          
         </h1>
 
         <section className="image_container">
@@ -112,32 +112,30 @@ const HomePage = () => {
           <RandomCountries />
           <RandomCountries />
         </div>
+      </div>
 
-    <div className='random_tourist'>
-    <h1><span class="line"></span>TOURIST PLACES<span class="line"></span></h1>
-    <div className='random_t'>
-    <RandomTourist />
-      <RandomTourist />
-      <RandomTourist />
-      <RandomTourist />
+      <div className="random_tourist">
+        <h1>
+          <span class="line"></span>TOURIST PLACES<span class="line"></span>
+        </h1>
+        <div className="random_t">
+          <TouristRandom />
+          <TouristRandom />
+          <TouristRandom />
+          <TouristRandom />
+        </div>
+      </div>
 
-    </div>
-    
-    </div>
-   
-
-  </div>
- 
-  <div className="newsletter-container">
-    <h1>Newsletter</h1>
-    <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
-    <input type="text" placeholder="Enter your email" />
-    <button type="submit">SUBSCRIBE</button>
-</div>
-
- <Footer/>
-<Footer />
-
+      <div className="newsletter-container">
+        <h1>Newsletter</h1>
+        <p>
+          Subscribe to my newsletter for the latest blog posts, tips, & travel
+          guides. Let's stay updated!
+        </p>
+        <input type="text" placeholder="Enter your email" />
+        <button type="submit">SUBSCRIBE</button>
+      </div>
+      <Footer />
     </>
   );
 };

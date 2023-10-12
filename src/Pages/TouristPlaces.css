@@ -35,8 +35,10 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  margin: 20px;
+  padding: 2px 3px;
+  margin: 1px;
+  margin-top: 10px;
+  margin-left: 99%;
   cursor: pointer;
 }
 

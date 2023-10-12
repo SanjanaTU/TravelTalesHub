@@ -1,6 +1,10 @@
+
+
 .footer-main{
-    background-color: black;
-    margin-top: 150px;
+  background-color: black;
+   position: absolute;
+   width: 80%;
+   padding: 5px 0;
     
 }
 .footer-logo {
@@ -12,7 +16,7 @@
   
   
   .footer-logo img {
-    width: 50px;
+    width: 40px;
     height: auto;
   }
   
