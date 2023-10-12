@@ -9,6 +9,7 @@ import img1 from '../assets/BBCTravel.jpg';
 import img2 from '../assets/R.png';
 import img3 from '../assets/usa.png';
 import img4 from '../assets/travel.png'
+import Footer from '../components/Footer'
 
 import RandomTourist from './RandomTourist';
 
@@ -134,7 +135,7 @@ const HomePage = () => {
     <input type="text" placeholder="Enter your email" />
     <button type="submit">SUBSCRIBE</button>
 </div>
-
+<Footer />
 
     </>
   
